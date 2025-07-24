@@ -18,7 +18,7 @@ export default function Home({ pages }) {
       <ul className="space-y-4">
         {pages.map((page) => (
           <li key={page.id}>
-            <Link href={`/page/${page.slug}`} className="text-xl text-blue-600 hover:underline">
+            <Link href={`/${page.slug}`} className="text-xl text-blue-600 hover:underline">
               {page.title.rendered}
             </Link>
           </li>
